@@ -1,0 +1,155 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.rightNav {
+    display: flex;
+}
+
+#search {
+    padding: 0.5rem;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.text-big {
+    font-size: 2rem;
+}
+
+.text-small {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-dark {
+    background-color: #555;
+}
+
+.products {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.products article {
+    margin: 1rem 0;
+}
+
+.products img {
+    width: 100%;
+    height: auto;
+}
+
+.text-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.text-footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-footer .social-media img {
+    width: 30px;
+}
+
+.clock {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .firstSection {
+        flex-direction: column;
+    }
+
+    .products {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .rightNav {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .burger {
+        display: block;
+    }
+}
